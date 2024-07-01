@@ -1,0 +1,16 @@
+@font-face {
+    font-family:'love';
+    src: url('fontes/love larry ttf.ttf') format('truetype');
+    fort-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'love';
+    font-weight: normal;
+}
