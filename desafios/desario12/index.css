@@ -59,6 +59,9 @@ section{
 
 pre{
     font-family: var(--font3);
+    padding-bottom: 2em;
+    white-space: pre-line;
+
 }
 
 section.normal{
@@ -69,17 +72,27 @@ section.normal{
 section.img{
     background-color: rgba(0, 0, 0, 0.596);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 section.img > pre{
     background-color: rgba(0, 0, 0, 0.692);
     width: 400px;
     display: inline-block;
-    padding: 50x;
+    padding: 50px;
+    text-shadow: 1px 1px 0px black;
 } 
 
-pre{
-    white-space: pre-line;
+section#img01{
+    background-image: url(../desario12/pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(../desario12/pacote-d012/imagens/background002.jpg);
 }
 
 footer{
