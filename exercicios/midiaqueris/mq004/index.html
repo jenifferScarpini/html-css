@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="stylesheet" href="estilos/estyle.css">
+    <link rel="stylesheet" href="estilos/MediaQ.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>meu site</h1>
         <i id="burguer" class="material-icons" onclick="clickmenu ()">menu</i>
@@ -34,6 +34,16 @@
     </main>
 
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+
+            }else{
+                itens.style.display = 'nonw'
+            }
+        }
+
+
         function clickmenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none';
